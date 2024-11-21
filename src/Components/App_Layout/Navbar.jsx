@@ -6,7 +6,7 @@ import usericon from "../../assets/Iconuser.svg";
 import { FaSearch } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className="bg-[#0d2539] px-6 md:px-[133px] py-4 flex items-center justify-between">
+    <div className="bg-[#0d2539] border-b-4 border-[#F3C15F] px-6 md:px-[133px] py-4 flex items-center justify-between">
       {/* Left: Logo and Search */}
       <div className="flex items-center w-full md:w-auto justify-between">
         {/* Search Icon for Mobile */}
