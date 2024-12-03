@@ -10,7 +10,7 @@ function MainLayout() {
       <Navbar />
       <div className="lg:flex lg:flex-row sm:flex sm:flex-col lg:pl-[111px] sm:pl-0">
         <Sidebar />
-        <div className="flex-1 p-4 ml-[67px] md:mr-[140px] ">
+        <div className="flex-1 p-4 md:ml-[67px] sm:ml-[0px] md:mr-[140px] ">
           <Outlet />
         </div>
       </div>

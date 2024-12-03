@@ -7,6 +7,7 @@ function Sidebar() {
   const mainNavLinks = [
     { href: "/", label: "Home" },
     { href: "/activity", label: "Your Activity" },
+    {href:"/convocationevent" , label:"Your convocations"},
     { href: "/friends", label: "Friends" },
     { href: "/profile", label: "Your Profile" },
   ];
