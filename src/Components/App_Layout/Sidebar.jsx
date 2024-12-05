@@ -10,6 +10,7 @@ function Sidebar() {
     {href:"/convocationevent" , label:"Your convocations"},
     { href: "/friends", label: "Friends" },
     { href: "/profile", label: "Your Profile" },
+    { href: "/setting", label: "Settings" },
   ];
   const additionalSections = [
         {
