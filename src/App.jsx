@@ -12,6 +12,8 @@ import Settings from "./Components/Setting/Settings";
 import ViewProfile from "./Components/Profile/ViewProfile/ViewProfile";
 import FeedbackForm from "./Components/FooterPages/FeedbackForm";
 import ContactUs from "./ContactUs";
+import MessagesPage from "./Components/NavbarPages/MessagesPage";
+import NotificationsPage from "./Components/NavbarPages/NotificationPage";
 function App() {
   return (
     <Router>
@@ -34,7 +36,8 @@ function App() {
         <Route path="/ViewProfile" element={<ViewProfile />}></Route>
         <Route path="/feedback-form" element={<FeedbackForm />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        {/* <Route path="/staying-safe" element={<StayingSafe />} /> */}
+        <Route path="/messages" element={<MessagesPage />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
       </Routes>
      
     </Router>

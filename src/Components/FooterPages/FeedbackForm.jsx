@@ -1,37 +1,3 @@
-// import React from "react";
-// import Navbar from "../App_Layout/Navbar";
-// import FooterComponent from "../../ResuableComponent/FooterComponent";
-// import Footer from "../App_Layout/Footer";
-// function FeedbackForm() {
-//   const handleFormSubmit = () => {
-//     alert("Form submitted!");
-//   };
-//   return (
-//     <div>
-//       <Navbar />
-
-//       <div className="bg-[#102F47] px-[140px] ">
-//         <FooterComponent
-//           heading="Feedback form"
-//           paragraph="The best way to tell us about your experience using TotallyTableTop is to fill in this form, and we’ll get your feedback right away. Alternatively, you can email hello@totallytabletop.com"
-//           cardHeading="Tell us what you think"
-//           inputPlaceholders={["Your Name", "Your Email address", "Your Phone"]}
-//           buttonText="Subscribe"
-//           onSubmit={handleFormSubmit}
-//         />
-//       </div>
-
-//       <Footer />
-//     </div>
-//   );
-// }
-
-// export default FeedbackForm;
-
-
-
-
-
 import React from "react";
 import Navbar from "../App_Layout/Navbar";
 import FooterComponent from "../../ResuableComponent/FooterComponent";
@@ -58,8 +24,6 @@ function FeedbackForm() {
           onSubmit={handleFormSubmit}
         />
       </div>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

@@ -1,10 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import image from "../../assets/image.png";
 import iconimage from "../../assets/Iconemail.svg";
 import iconbell from "../../assets/Iconbell.svg";
 import usericon from "../../assets/Iconuser.svg";
 import { FaSearch } from "react-icons/fa";
+
 function Navbar() {
+  const navigate = useNavigate();
+
+  // Navigation Handlers
+  const goToMessages = () => navigate("/messages");
+  const goToNotifications = () => navigate("/notifications");
+
   return (
     <div className="bg-[#0d2539] border-b-4 border-[#F3C15F] px-6 md:px-[133px] py-4 flex items-center justify-between">
       {/* Left: Logo and Search */}
@@ -18,8 +26,8 @@ function Navbar() {
         <div className="flex-grow md:flex-grow-0 flex justify-center md:justify-start">
           <div className="w-[100px] h-[100px] flex items-center justify-center">
             <img
-              className="w-full h-full object-contain" // Ensures the image scales properly within the container
-              src={image} // Replace with your logo path
+              className="w-full h-full object-contain"
+              src={image}
               alt="Logo"
             />
           </div>
@@ -37,11 +45,11 @@ function Navbar() {
 
       {/* Right: Icons and User Profile */}
       <div className="flex items-center gap-4">
-        {/* Mail Icon (hidden on md and sm screens) */}
-        <div className="hidden lg:block relative">
+        {/* Mail Icon */}
+        <div className="hidden lg:block relative cursor-pointer" onClick={goToMessages}>
           <img
             className="w-10 h-10 rounded-full bg-[#102F47] p-2"
-            src={iconimage} // Replace with your mail icon path
+            src={iconimage}
             alt="Mail"
           />
           <span className="absolute top-0 right-0 text-xs text-white bg-red-500 rounded-full w-4 h-4 flex items-center justify-center">
@@ -49,18 +57,17 @@ function Navbar() {
           </span>
         </div>
 
-        {/* Bell Icon (hidden on md and sm screens) */}
-        <div className="hidden lg:block">
+        {/* Bell Icon */}
+        <div className="hidden lg:block cursor-pointer" onClick={goToNotifications}>
           <img
             className="w-10 h-9 rounded-full bg-[#102F47] p-2"
-            src={iconbell} // Replace with your bell icon path
+            src={iconbell}
             alt="Notifications"
           />
         </div>
 
-        {/* User Profile Icon with Name and Dropdown */}
+        {/* User Profile Icon */}
         <div className="flex items-center bg-[#102F47] p-2 rounded-full">
-          {/* Username and Dropdown Arrow (hidden on small screens) */}
           <div className="hidden md:flex items-center ml-2 text-white">
             <span className="mr-1">Helen</span>
             <svg
@@ -78,7 +85,7 @@ function Navbar() {
           </div>
           <img
             className="w-10 h-10 rounded-full"
-            src={usericon} // Replace with your user icon path
+            src={usericon}
             alt="User Profile"
           />
         </div>
