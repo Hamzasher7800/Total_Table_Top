@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../../ResuableComponent/input";
+import Input from "../../ResuableComponent/Input";
 import iconannouce from "../../assets/iconannouce.svg";
 import Button from "../../ResuableComponent/Button";
 import iconlocation from "../../assets/iconlocation.svg";
