@@ -14,6 +14,8 @@ import FeedbackForm from "./Components/FooterPages/FeedbackForm";
 import ContactUs from "./ContactUs";
 import MessagesPage from "./Components/NavbarPages/MessagesPage";
 import NotificationsPage from "./Components/NavbarPages/NotificationPage";
+import SignIn from "./Components/Authentication/SignIn";
+import SignUp from "./Components/Authentication/SignUp";
 function App() {
   return (
     <Router>
@@ -38,6 +40,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/messages" element={<MessagesPage />} />
         <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/login" element={<SignIn/>}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>
       </Routes>
      
     </Router>
